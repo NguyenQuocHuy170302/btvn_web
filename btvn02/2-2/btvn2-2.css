@@ -1,0 +1,168 @@
+Skip to content
+Search or jump to…
+
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@NguyenQuocHuy170302 
+NguyenQuocHuy170302
+/
+nop_btvn_web
+1
+00
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+Settings
+nop_btvn_web/btvn02/2-2/btvn2-2.css
+@NguyenQuocHuy170302
+NguyenQuocHuy170302 Update btvn2-2.css
+Latest commit 75428aa 20 seconds ago
+ History
+ 2 contributors
+@NguyenQuocHuy170302@invalid-email-address
+123 lines (115 sloc)  2.39 KB
+  
+.instruction h1 {
+    color:green;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    margin-bottom: 0px;
+    
+}
+.bigblock{
+    display: flex;
+    width:100%;
+}
+.block_left{
+    width:30%; 
+    margin-top: 0px; 
+    margin-left: 5%;
+}
+.left1 img{
+    width: 100%;
+    height: 300px;
+}
+.left2 img {
+    width: 100%;
+    height: 300px;
+}
+.block_left p {
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+    color: chocolate;
+    background-color: antiquewhite;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 0px;
+    border-radius: 5px;
+
+}
+
+.block_right {
+    width:60%;
+    margin-left: 5%;
+}
+
+.block_right_top {
+    display: flex;
+    width: 100%;
+    height:125px;
+    margin-top: 25px;
+}
+
+.block_right_top_left {
+    display: flex;
+    width: 48%;
+    margin-right: 4%;
+    height: 125px;
+}
+.block_right_top_right {
+    display: flex;
+    width: 48%;
+    height:125px;
+}
+
+.right_top_left_img  {
+    margin-top: 16px;
+    width:40%;
+    height: 100%;
+}
+.right_top_left_text  {
+    width:60%;
+    height: 100%;
+}
+.right_top_right_img  {
+    margin-top: 16px;
+    width:40%;
+    height: 100%;
+}
+.right_top_right_text  {
+    width:60%;
+    height: 100%;
+}
+
+.right_top_left_img img {
+    width:100%;
+    height: 100%;
+}
+.right_top_left_text p  {
+    font-size: 18px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border-radius: 5px;
+    text-align: center;
+    width:100%;
+    height: 100%;
+    color: chocolate;
+    background-color: antiquewhite;
+}
+.right_top_right_img img  {
+    width:100%;
+    height: 100%;
+}
+.right_top_right_text p {
+    font-size: 18px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border-radius: 5px;
+    text-align: center;
+    width:100%;
+    height: 100%;
+    color: chocolate;
+    background-color: antiquewhite;
+}
+
+.right_bottom {
+    margin-top: 50px;
+}
+.img img{
+    width: 100%;
+    height: 400px;
+}
+.text p {
+    color: chocolate;
+    width: 100%;
+    border-radius: 5px;
+    background-color: antiquewhite;
+    text-align: center;
+}
+© 2021 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
+Loading complete

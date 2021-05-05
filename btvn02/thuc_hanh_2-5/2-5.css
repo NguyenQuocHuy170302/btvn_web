@@ -1,0 +1,55 @@
+body {
+    background-color: tomato !important;
+}
+
+.block {
+    width: 32%;
+    margin-left: 34%;
+    margin-right: 34%;
+    background-color: white;
+    border-radius: 8px;
+   padding: 16px;
+}
+
+ div p {
+    font-size: 18px;
+    margin-top: 18px;
+    margin-bottom: 9px;
+}
+
+input {
+    width: 97%;
+    height: 40px;
+    border-radius: 5px;
+    border: 0px lavender;
+    background-color:lavender;
+    padding: 8px;
+    
+}
+.instruction  {
+    color: white;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.submit-button {
+
+    height: 40px;
+    width: 97%;
+    color: white;
+    font-size: 18px;
+    background-color: green;
+    margin-top: 20px;
+}
+.submit-button:hover {
+    background-color:yellowgreen;
+}
+.sign_in p {
+    font-size: 16px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.sign_in a:hover {
+color: hotpink;
+}

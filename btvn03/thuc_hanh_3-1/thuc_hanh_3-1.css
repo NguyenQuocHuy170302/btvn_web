@@ -1,0 +1,119 @@
+.instruction h1 {
+    color: green;
+    text-align: center;
+}
+
+.instruction p {
+    font-family: system-ui;
+    text-align: center;
+    color:dodgerblue;
+    font-size:x-large;
+    border-radius: 10px;
+    border: 2px chocolate solid;
+    padding: 0.5em 0em;
+    background-color: antiquewhite;
+}
+
+.block {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.block_left {
+    width: 65%;
+    margin-right: 2%;
+    margin-left:1%;
+    font-size: x-large;
+}
+
+.block_right {
+    width:32%;
+    margin-top:45px;
+}
+
+.block_left img {
+    width:100%;
+    margin-top: 0px;
+}
+
+.block_left p {
+    text-align: center;
+    padding: 1.5em 0em;
+    color: chocolate;
+    background-color: antiquewhite;
+    margin-bottom: 0px;
+}
+
+.right_smail {
+    width: 80%;
+    margin-right: 20%;
+    height: 100px;
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.right_smail img {
+    width:50%;
+
+}
+
+.right_smail p {
+    width:50%;
+    color: chocolate;
+    margin: 0px;
+    padding:1em 0em ;
+    background-color: antiquewhite;
+    text-align: center;
+}
+
+.yourname {
+    text-align: center;
+}
+.yourname p {
+    color: chocolate;
+}
+.yourname p input {
+
+    padding:0.5em;
+    border-radius: 10px;
+    border:2px brown solid;
+
+    background-color: antiquewhite;
+}
+
+.comment {
+    display: flex;
+}
+.text  {
+    margin-top: 70px;
+    color: chocolate;
+    margin-left: 35%;
+}
+
+
+textarea {
+    background-color:antiquewhite;
+    border-radius: 10px;
+    border: 2px brown solid;
+}
+
+@media only screen and (max-width: 800px) {
+.instruction p {
+    color: seagreen;
+    background-color: violet;
+    border: 2px solid tomato;
+
+}
+
+.instruction a {
+    color: greenyellow;
+    color:violet;
+}
+
+.block {
+    display: block;
+}
+
+.block_left, .block_right, .right_smail {
+    width:100%;
+}

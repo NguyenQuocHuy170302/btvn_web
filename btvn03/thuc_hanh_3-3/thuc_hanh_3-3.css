@@ -1,0 +1,16 @@
+.title,.footer {
+    background-color:aquamarine;
+    height: 10vh;
+}
+
+.left-sidebar,.right-sidebar {
+    background-color: white;
+    height: 80vh;
+}
+
+.main-page {
+    background-color: antiquewhite;
+}
+.dropdown {
+    margin-bottom: 8px;
+}

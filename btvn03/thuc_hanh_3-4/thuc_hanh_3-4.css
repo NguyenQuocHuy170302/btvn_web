@@ -1,10 +1,94 @@
-.head-page {
+.header,.footer {
     height: 10vh;
     background-color: lightblue;
-    padding-top: 20px;
+    position: relative;
 }
 
-.input-group {
-    width: 450px;
-    margin-left: 1050px;
+.search-box {
+    width:450px;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+}
+
+.left-sidebar {
+    height: 185vh;
+    background-color: antiquewhite;
+}
+  
+.list-group {
+    width:250px;
+    height: 185vh;
+    border-radius: 0px;
+    background-color: azure;
+}
+
+.main-page {
+    height: 185vh;
+    background-color:antiquewhite;
+ position: relative;
+}
+
+.right-sidebar {
+    background-color: white;
+}
+
+.dropdown {
+    margin-bottom: 8px;
+}
+
+.item1 {
+    position:absolute;
+    left:-90px;
+    top: 15px;
+
+}
+.item2 {
+    position: absolute;
+    top:15px;
+    left: 230px;
+}
+
+.item3 {
+    position: absolute;
+    top:15px;
+    left: 550px;
+}
+.item4 {
+    position: absolute;
+    top: 460px;
+    left: -90px;
+}
+.item5 {
+    position: absolute;
+    top: 460px;
+    left: 230px;
+}
+.item6 {
+    position: absolute;
+    top: 460px;
+    left: 550px;
+}
+.item7 {
+    position: absolute;
+    top: 905px;
+    left: -90px;
+}
+.item8 {
+    position: absolute;
+    top: 905px;
+    left: 230px;
+}
+
+.row {
+    position: relative;
+}
+
+.temp  {
+    width:520px;
+    height: 185vh;
+    position: absolute;
+    right: 0px;
+    top:0px;
+    background-color: white;
 }

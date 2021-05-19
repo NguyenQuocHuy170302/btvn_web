@@ -12,9 +12,12 @@ function addItem() {
     newItem.href="https://www.facebook.com/profile.php?id=100039320598007";
     newItem.classList = "list-group-item list-group-item-action";
     newItem.ondblclick = () => deleteItem(sizeID);
+    if(addingItem.value!="")
+    {
     newItem.innerText=addingItem.value;
     currentItem.appendChild(newItem);
     addingItem.value="";
+    }
     
 }
 

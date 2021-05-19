@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5.4</title>
+    <script type="text/javascript">
+
+        function onClickIntruction() {
+            console.log("a");
+            window.alert("You clicked Instruction")
+        }   
+
+
+        function calculateResult() {
+            const firstInput = document.getElementsByName("first_name_input")[0].value;
+            const secondInput = document.getElementsByName("second_name_input")[0].value;
+
+            const firstNumber = Number.parseInt(firstInput);
+            const secondNumber = Number.parseInt(secondInput);
+
+            if (Number.isInteger(firstNumber) && Number.isInteger(secondNumber)) {
+                const sum = firstNumber + secondNumber;
+                window.alert(`Result is: ${sum}`);
+                document.getElementsByClassName("add")[0].innerHTML = `Result is: ${sum}`;
+                return
+            }
+
+            window.alert(`Input is not correct. Please input a number `);
+            document.getElementsByClassName("add")[0].innerHTML = `Cannot get result`;
+        }
+
+    </script>
+
+</head>
+<body>
+    <div class="instruction" onclick="onClickIntruction()">
+        <h1>This is Lesson 5-4</h1>
+    </div>
+    <div class="first_number">
+        <p>Please input the first number:</p>
+        <input type="text" placeholder="First number" name="first_name_input">
+    </div>
+
+    <div class="second_number">
+        <p>Please input the second number:</p>
+        <input type="text" placeholder="Second number" name="second_name_input">
+        <input type="button" value="calculate" onclick="calculateResult()">
+    </div>
+
+    <div class="add"></div>
+
+</body>
+</html>

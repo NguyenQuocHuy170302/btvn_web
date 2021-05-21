@@ -1,0 +1,86 @@
+.header {
+    background-color:lightskyblue;
+    height:5em;
+    position: relative;
+}
+
+.header #input {
+    border-radius: 5px;
+    border: white 0px solid;
+    height:2.5em;
+    width: 30%;
+    position: absolute;
+    right: 4.5em;
+    margin-top: 1em;
+}
+.header #search {
+    position: absolute;
+    right:.5em;
+    margin-top: 1em;
+    height:2.5em;
+    background-color: blue;
+    border-radius: 5px;
+    border: 1px blue solid;
+    
+}
+
+.sidebar {
+    background-color: azure;
+}
+.list-group {
+    width:25em;
+    border-radius: 0px;
+    border: 0px solid white;
+}
+
+.main-page {
+    width:1000px;
+    background-color: antiquewhite;
+}
+
+.card {
+    margin-left: 25px;
+    margin-top: 20px;
+}
+
+.dropdown {
+    margin-bottom: 8px;
+}
+
+.card-row {
+    display: inline-flex;
+}
+.footer {
+    margin-top: 10px;
+    width:100%;
+    height:5em;
+    background-color:cyan;
+}
+
+.AddItem {
+    position: relative;
+    background-color: white;
+    height:60px;
+}
+
+#Add {
+    position: absolute;
+    right:77px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    height:40px;
+    width: 250px;
+    border-radius: 5px;
+    border: 0px solid azure;
+}
+
+#subAdd {
+    position: absolute;
+    right: 12px;
+    height:40px;
+    width:60px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: azure 1px solid;
+}

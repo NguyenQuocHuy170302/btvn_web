@@ -1,0 +1,13 @@
+# giáo viên nữ dậy vào thứ 7
+SELECT * FROM teacher
+LEFT JOIN teachingclass on teacher.id=teachingclass.teacherId
+LEFT JOIN class on teachingclass.classId=class.id
+WHERE teacher.gender='f' AND class.time LIKE '%7%';
+
+# hiển thị số lớp có học sinh học nhiều hơn 1
+SELECT class.name, COUNT(*) as 'number-student' FROM class
+LEFT JOIN registerclass on registerclass.classId=class.id
+LEFT JOIN student on registerclass.studentId=student.id
+GROUP By class.name
+HAVING COUNT(*)>1
+;

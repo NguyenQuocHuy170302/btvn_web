@@ -1,0 +1,27 @@
+CREATE TABLE HocSinh (
+	id int UNIQUE,
+    hoten varchar(255),
+    ngaysinh date,
+    lop varchar(255)
+);
+
+CREATE TABLE GiangVien (
+	id int UNIQUE,
+    hoten varchar(255) NOT NULL,
+    ngaysinh date,
+    chuyenmon varchar(255) NOT NULL
+);
+
+CREATE TABLE Lop (
+	id int UNIQUE,
+    tenlop varchar(255) NOT NULL,
+    ngaybatdau date,
+    ngayhoc int DEFAULT 0,
+   	giohoc int DEFAULT 0
+);
+
+ALTER TABLE	giangvien
+ADD email varchar(255);
+
+ALTER TABLE giangvien
+DROP email;

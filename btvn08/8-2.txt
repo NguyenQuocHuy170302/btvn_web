@@ -1,0 +1,15 @@
+INSERT INTO giangvien 
+(id,hoten,ngaysinh,chuyenmon)
+VALUES
+(1, "Nguyen Thanh Nam", "1990-01-24", "Web"),
+(2, "Cao Hong Duc", "1991-05-06", "Web"),
+(3, "Do Thu Hien", "1992-10-17", "Web");
+
+SELECT* FROM giangvien WHERE id=1;
+
+UPDATE giangvien 
+set hoten="Nguyen Quoc Huy "
+WHERE id=1;
+
+DELETE FROM giangvien
+WHERE id=1;

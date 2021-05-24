@@ -1,0 +1,22 @@
+# tìm kiếm các lớp học vào thứ 7
+SELECT *FROM class
+WHERE time LIKE '%7%';
+
+#tính điểm chất lượng trung bình của các lớp PHP
+SELECT AVG(quality)
+FROM class 
+WHERE name like '%PHP%';
+
+# hiển thị thông tin của học sinh đến lớp vào thứ 7
+SELECT student.* FROM student
+LEFT JOIN registerclass ON student.id=registerclass.id
+LEFT JOIN class on registerclass.classId=class.id
+WHERE time like '%7%';
+
+# hiển thị thông tin của học sinh và giáo viên ở lớp có điểm chất lượng >=4.5
+SELECT teacher.*,student.* FROM teacher
+INNER JOIN teachingclass on teacher.id=teachingclass.teacherId
+INNER JOIN class on teachingclass.classId=class.id
+INNER JOIN registerclass on class.id=registerclass.classId
+INNER JOIN student on registerclass.studentId=student.id
+WHERE quality>=4.5; 

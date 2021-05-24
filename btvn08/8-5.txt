@@ -1,0 +1,13 @@
+# tính trung bình học sinh theo lớp
+SELECT SUM(SN.student_number)/COUNT(SN.name) FROM
+(SELECT class.name,COUNT(student.id) as"student_number" FROM class 
+LEFT JOIN registerclass on registerclass.classId=class.id
+LEFT JOIN student on student.id=registerclass.studentId
+GROUP BY class.name) SN
+
+# tính điểm chất lượng trung bình của mỗi giáo viên
+SELECT teacher.name ,SUM(quality)/COUNT(class.name) AS "average_quality"
+FROM class
+LEFT JOIN teachingclass on teachingclass.classId=class.id
+LEFT JOIN teacher on teacher.id=teachingclass.teacherId
+GROUP BY (teacher.name);

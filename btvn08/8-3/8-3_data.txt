@@ -1,0 +1,97 @@
+DROP TABLE IF EXISTS class;
+CREATE TABLE class(
+  id int NOT NULL AUTO_INCREMENT,
+  name varchar(255) NOT NULL,
+  time varchar(255) DEFAULT NULL,
+  iconImage varchar(1000) DEFAULT NULL,
+  quality float NOT NULL,
+  createdAt datetime NOT NULL ON UPDATE CURRENT_TIMESTAMP,
+  updatedAt datetime DEFAULT NULL,
+  PRIMARY KEY (id)
+);
+
+INSERT INTO class 
+(id,name,time,iconImage,quality,createdAt,updatedAt)
+VALUES
+(1,	'Web 01',	'2,4,6',	NULL,	4.5,	'2020-12-21 06:16:42',	NULL),
+(2,	'PHP 01',	'3,5,7',	NULL,	4.6,	'2020-12-21 06:18:47',	'2020-12-21 06:18:47'),
+(3,	'Advanced PHP 02',	'7,CN',	NULL,	4.3,	'2020-12-21 06:17:46',	NULL),
+(4,	'AWS 01',	'6,7,CN',	NULL,	4.4,	'2020-12-21 06:18:06',	NULL),
+(5,	'Test 01',	'7,CN',	NULL,	4.6,	'2020-12-21 06:18:06',	NULL),
+(6,	'Web 02',	'3,CN',	NULL,	4.5,	'2020-12-21 06:16:42',	'2021-03-01 05:50:46'),
+(7,	'App 01',	'4,CN',	NULL,	4.7,	'2020-12-21 06:16:42',	'2021-03-01 05:50:46');
+
+DROP TABLE IF EXISTS RegisterClass;
+CREATE TABLE RegisterClass (
+  id int NOT NULL AUTO_INCREMENT,
+  studentId int NOT NULL,
+  classId int NOT NULL,
+  PRIMARY KEY (id)
+);
+
+INSERT INTO registerclass
+(id,studentId,classId)
+VALUES
+(1,	1,	1),
+(2,	2,	1),
+(3,	3,	2),
+(4,	4,	2),
+(5,	5,	2),
+(6,	6,	5),
+
+DROP TABLE IF EXISTS Student;
+CREATE TABLE Student (
+  id int NOT NULL AUTO_INCREMENT,
+  name varchar(255) NOT NULL,
+  dateOfBirth date NOT NULL,
+  IDcardNumber varchar(15) NOT NULL,
+  graduated tinyint(1) NOT NULL,
+  createdAt datetime NOT NULL ON UPDATE CURRENT_TIMESTAMP,
+  updateAt datetime NOT NULL,
+  PRIMARY KEY (id)
+);
+
+INSERT INTO student
+(id,name,dateOfBirth,IDcardNumber,graduated,createdAt,updateAt)
+VALUES
+(1,	'Nguyễn Văn A',	'1996-07-15',	'1234567000',	0,	'2020-12-21 06:20:11',	'2020-12-21 06:20:11'),
+(2,	'Trần Văn B',	'1993-12-19',	'1234567001',	0,	'2020-12-21 06:20:39',	'2020-12-21 06:20:39'),
+(3,	'Đặng Thị C',	'1995-01-25',	'1234567002',	0,	'2020-12-21 06:21:03',	'2020-12-21 06:21:03'),
+(4,	'Võ Hồng D',	'1997-08-13',	'1234567003',	0,	'2020-12-21 06:21:38',	'2020-12-21 06:21:38'),
+(5,	'Nguyễn Hồng X',	'1996-07-15',	'1234567004',	1,	'2020-12-21 06:22:24',	'2020-12-21 06:20:11'),
+(6,	'Trần Nguyễn E',	'1998-10-04',	'1234567005',	0,	'2020-12-21 06:23:02',	'2020-12-21 06:20:39'),
+(7,	'Đặng Trần T',	'1995-01-25',	'1234567009',	1,	'2020-12-21 06:23:33',	'2020-12-21 06:21:03'),
+(8,	'Đinh Văn V',	'1997-11-11',	'1234567010',	0,	'2020-12-21 06:23:57',	'2020-12-21 06:21:38');
+
+INSERT INTO teacher 
+(id,name,gender,dateOfBirth,major,contract,createdAt,updatedAt)
+VALUES
+(1,	'Đoàn Hải M',	'm',	'1990-08-07',	'WEB',	'fulltime',	'2020-12-21 06:25:11',	NULL),
+(2,	'Trương Thị K',	'f',	'1989-12-04',	'Test',	'fulltime',	'2020-12-21 06:25:45',	NULL),
+(3,	'Mai Bá V',	'm',	'1993-12-19',	'WEB',	'fulltime',	'2020-12-21 06:26:08',	NULL),
+(4,	'Trần Vinh K',	'm',	'1994-01-25',	'WEB',	'part-time',	'2020-12-21 06:26:47',	NULL),
+(5,	'Nguyễn Thị Minh K',	'f',	'1988-07-15',	'Test',	'fulltime',	'2021-03-01 05:47:08',	'2021-03-01 05:47:08'),
+(6,	'Đặng Thu H',	'f',	'1991-04-10',	'Web',	'fulltime',	'2021-03-01 05:47:41',	'2021-03-01 05:47:41'),
+(7,	'Trần Thu C',	'f',	'1985-10-10',	'App',	'fulltime',	'2021-03-01 05:48:12',	'2021-03-01 05:48:12');
+
+DROP TABLE IF EXISTS TeachingClass;
+CREATE TABLE TeachingClass (
+  id int NOT NULL AUTO_INCREMENT,
+  teacherId int NOT NULL,
+  classId int NOT NULL,
+  PRIMARY KEY (id)
+) ;
+
+INSERT INTO teachingclass
+(id,teacherId,classId)
+VALUES
+(1,	1,	1),
+(2,	1,	2),
+(3,	2,	3),
+(4,	3,	4),
+(5,	4,	5),
+(6,	6,	6),
+(7,	7,	7),
+(8,	5,	3);
+
+

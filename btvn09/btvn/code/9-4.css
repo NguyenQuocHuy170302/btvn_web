@@ -1,0 +1,56 @@
+body {
+    background-color:black;
+}
+
+.table {
+    color: white;
+}
+
+a {
+    margin-left: 670px;
+    color:blueviolet;
+    font-size: 48px;
+}
+
+a:hover {
+    color:red;
+}
+
+.admin {
+    margin-top: 50px;
+    display: flex;
+}
+
+.delete, .fix {
+    height: auto;
+    width:25%;
+    background-color:deepskyblue;
+    border-radius: 10px;
+    border:deepskyblue 0px solid;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.delete {
+    margin-left: 20%;
+    margin-right: 5%;
+}
+
+.fix {
+    margin-right: 25%;
+}
+
+.delete input , .fix input {
+    width:80%;
+    height:40px;
+    border-radius: 5px;
+    border: deepskyblue 0px solid;
+}
+ .delete .content , .fix .content {
+    color:purple;
+ }
+
+ .submit-fix:hover , .submit-delete:hover {
+    background-color: tomato;
+ }

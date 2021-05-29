@@ -1,0 +1,67 @@
+body {
+    background-color: black;
+}
+
+.instruction {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 150px;
+}
+
+.main-page {
+    display: flex;
+    width: 100%;
+}
+
+.introduce {
+    width:45%;
+    margin-left: 18%;
+}
+
+.introduce h1 {
+    color:blueviolet
+}
+
+.introduce p {
+    width: 80%;
+    color:deeppink;
+    font-size: 24px;
+}
+
+.block-signup {
+    width:30%;
+    margin-right: 12%;
+    background-color: deepskyblue;
+    border-radius: 10px;
+    padding-top: 20px;
+    border:deepskyblue 0px solid;
+    text-align: center;
+}
+
+.block-signup input {
+    width: 80%;
+    height:40px;
+    border-radius: 5px;
+    border: deepskyblue 0px solid;
+}
+
+input.submit {
+    background-color: blue;
+    width: 80%;
+}
+
+input.submit:hover {
+    background-color: blueviolet;
+}
+
+.signin {
+    color: blue;
+}
+
+.signin a {
+    color: blueviolet;
+}
+
+.signin a:hover {
+    color: tomato;
+}

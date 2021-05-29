@@ -1,0 +1,38 @@
+body {
+    background-color:black;
+}
+
+h1 {
+    color: blueviolet;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+
+.block {
+    background-color: deepskyblue;
+    width: 60%;
+    margin-left: 20%;
+    border-radius: 10px;
+    border: deepskyblue 0px solid;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.block p {
+    color: purple;
+    font-size: 18px;
+}
+
+.submit {
+    background-color:blueviolet;
+    width:90%;
+    border-radius: 5px;
+    border: blueviolet 0px solid;
+    height:40px;
+    margin-bottom: 20px;
+}
+
+.submit:hover {
+    background-color: red;
+}
